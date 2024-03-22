@@ -20,6 +20,8 @@ Write in console line by line:
 npm install react-scripts --save-dev
 npm start
 ```
+
+To learn more about npm, follow down the README
 ## Contributing:
 We welcome contributions to our Weather App Website! If you're interested in contributing, here's how you can get started:
 
