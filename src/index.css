@@ -1,0 +1,261 @@
+:root {
+  --font: "Inter", sans-serif;
+  --accent: #D2982D;
+  --accent-1: #DEA02E;
+  --accent-2: #F5B747;
+  --black: #2B261D;
+  --white: #FFFFFF;
+  --grey: #403B45;
+  /*WTF WHY THESE COLORS WERE NOT IN THE WIREFRAME???*/
+  --accent-3: #E0A12E;
+  --accent-4: #D2982D;
+  --accent-5: #FFC355;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font);
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--accent);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--accent);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Button-black, .Button-yellow, .Button-frame{
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer
+}
+
+.Button-frame{
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--white);
+}
+
+.Button-frame:hover{
+  backdrop-filter: brightness(1.1);
+}
+
+.Button-frame:active{
+  backdrop-filter: brightness(0.5);
+}
+
+.Button-black{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.Button-black:hover{
+  filter: contrast(0.85);
+}
+
+.Button-black:active{
+  filter: contrast(1.5);
+}
+
+.Button-yellow{
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: var(--accent-2);
+  color: var(--black);
+}
+
+.Button-yellow:hover{
+  filter: brightness(1.25);
+}
+
+.Button-yellow:active{
+  filter: contrast(0.85);
+}
+
+.icon {
+  display: inline-block;
+  width: auto;
+}
+
+/*Backgrounds*/
+
+.bg-waves {
+  background-image: url("resources/Waves.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.Bg-footer {
+  background-image: url("resources/Footer.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.Check-list{}
+
+.Check-list > li{
+  list-style: url("resources/unchecked.svg") inside;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+.Check-list > li.checked{
+  list-style: url("resources/checked.svg") inside;
+  color: var(--white);
+}
+
+.Bg-clouds{
+  background-image: url("resources/clouds.svg"), linear-gradient(to bottom, var(--accent-3), 25%, var(--accent-4));
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+
+/*Carousel Review*/
+
+.Carousel-review{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Carousel-review-left, .Carousel-review-right{
+  width: 25%;
+  height: 15%;
+  background-image: url("resources/left-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.Carousel-review-right{
+  transform:scaleX(-1);
+}
+
+.Carousel-review-item{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem 2.5rem;
+  border-radius: 1rem;
+  background-color: var(--grey);
+  box-shadow: 0 0.25rem 1.25rem var(--grey);
+}
+
+.Carousel-review-text{
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--white);
+}
+
+.Carousel-review-header{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.Carousel-review-avatar{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 0.1rem var(--white) solid;
+}
+
+.Carousel-review-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.Carousel-review-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* FAQ */
+.FAQ {
+
+}
+
+.FAQ-item {
+
+}
+
+.FAQ-summary{
+  padding: 1.5rem 0;
+  border-bottom: 1px var(--accent-2) solid ;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.FAQ-summary{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px var(--accent-2) solid ;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.FAQ-summary:after{
+  content: "\f105";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+}
+
+.FAQ-details[open] > .FAQ-summary:after{
+  content: "\f107";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+}
+
+.FAQ-details{
+  padding: 0 1.5rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.FAQ-text{
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
