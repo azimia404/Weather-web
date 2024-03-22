@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Weather App Website Readme
 
 Welcome to our Weather App Website! This readme file will provide you with all the necessary information to understand, use, and contribute to our website effectively.
@@ -106,4 +104,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
->>>>>>> 35708b83ed3fac3e2d8d4c29ac63062706cd7887
